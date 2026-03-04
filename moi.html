@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet2 page3</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fonts/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/css/jquery-te-1.4.0.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- start navbar -->
+        <div class="row bg-info text-white">
+            <div class="col-md-2 my-1">
+                <div><span class="fa fa-clock mr-2"></span>ENVOL</div>
+            </div>
+            <div class="col-md-9 my-1">
+                <div><button id="gt" class="btn text-white  fa fa-list"></button></div>
+            </div>
+            <div class="col-md-1 my-1">
+                <div class="row">
+                    <div class="col-md-6 pl-5">
+                        <span class="fa fa-user "></span>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa fa-bell "></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end navbar -->
+        <!-- start sidebar and content -->
+
+        <div class="row">
+            <div class="col-md-2 bg-dark vh-100" id="lk">
+                <nav class="nav flex-column  my-3">
+                    <img src="logo.jpg" class="rounded-circle" width="75px" height="75px">
+                    <div class="row mt-3">
+                        <a href="create.html" class="text-white btn w-100"
+                            style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-clock ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Acceuil</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100 collapsed"
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#bc"
+                            id="pe">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-user ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Personnel</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa" id="chpe"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="bc" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-user oo"></span>
+                            <span class="fa fa-envelope oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Ajouter Personnel</span>
+                            <a href="create.html" class="text-decoration-none text-white aa"><span>Liste
+                                    Personnel</span></a>
+                            <span class="aa">Envoyer des Mails</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1" id="pr">
+                        <a href="" class="text-white btn w-100 collapsed "
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#ba"
+                            id="pr">
+                            <div class="row">
+                                <div class="col-md-1    ">
+                                    <span class="fa fa-briefcase ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Prestataire</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa" id="chpr"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="ba" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-envelope oo"></span>
+                            <span class="fa fa-user oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Ajouter Prestataire</span>
+                            <span class="aa">Liste Prestataire</span>
+                            <span class="aa">Envoyer des Mails</span>
+                            <span class="aa">Ajouter Contact</span>
+                            <span class="aa">Liste Contact</span>
+                            <span class="aa">Envoyer des SMS</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100 collapsed"
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#be"
+                            id="tr">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-hourglass ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Travaux</span>
+                                </div>
+                                <div class="col-md-1 justify-content-end">
+                                    <span class="fa fa-chevron-right aa" id="chtr"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="be" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-bell oo"></span>
+                            <span class="fa fa-comment oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Effectuer Travaux</span>
+                            <span class="aa">Liste Travaux</span>
+                            <span class="aa">Envoyer des Mails</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-bold ii"></span>
+                                </div>
+                                <div class="col-md-8 text-nowrap d-flex justify-content-start">
+                                    <span class="aa">Opération Bancaire</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-eye-dropper ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Prestation</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-arrow-up ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Comptabilité</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1 mb-5">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-folder-open ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Document</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-10 bg-light" id="kl">
+                <div class="bg-white mt-3" id="ee">
+                    <div class="row pt-3">
+                        <div class="col-md-11"></div>
+                        <div class="col-md-1">
+                            <span class=" fa fa-chevron-down" id="cc"></span>
+                            <span class="fa fa-close ml-1" id="dd"></span>
+                        </div>
+                    </div>
+
+                    <h5 class="text-info text-center mb-4">ORDONNER NOUVELLE TACHE</h5>
+                    <hr>
+                    <div id="ff">
+
+                        <form class="mr-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-2 offset-2 mt-2 text-center">
+                                            <label for="" class="pr-0"> <strong>Nature</strong> </label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <select id="sel" name="" class="form-control rounded-0 sel"
+                                                placeholder="choisir la Nature">
+                                                <option value=" 1">option1</option>
+                                                <option value=" 2">option2</option>
+                                                <option value=" 3">Option3</option>
+                                                <option value=" 4">Autre...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row bb">
+                                        <div class="col-md-2 offset-2 mt-2 text-center">
+                                            <label for=""> <strong> Motif</strong></label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control rounded-0" placeholder="Motif">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-2 offset-2 text-center">
+                                            <label for=""> <strong> Cout</strong></label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="number" class="form-control rounded-0" placeholder="Cout">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-3 offset-1 text-center">
+                                            <label for=""> <strong>Responsable</strong> </label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control rounded-0" placeholder="Responsable">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2 pl-5 text-center">
+                                    <span class=""> <strong>Description</strong> </span>
+                                </div>
+                                <div class="col-md-10 border-1 border-dark">
+                                    <textarea name="" id="textarea" cols="122%" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="offset-5 mb-5">
+                                    <button class="btn text-white bg-danger">Cancel</button>
+                                    <button class="btn text-white bg-success">Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end sidebar and content -->
+    </div>
+
+</body>
+<!-- liens de l'editeur -->
+<script src="vendors/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+
+<script src="vendors/js/jquery-te-1.4.0.min.js"></script>
+<script>
+    $("#textarea").jqte();
+
+</script>
+<!-- liens du js -->
+<script src="index.js"></script>
+
+</html>

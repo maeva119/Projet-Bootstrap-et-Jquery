@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet2 page2</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fonts/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+</head>
+
+<body>
+    <div class="container-fluid">
+    <!-- start navbar -->
+    <div class="row bg-info text-white">
+        <div class="col-md-2 my-1">
+            <div><span class="fa fa-clock mr-2"></span>ENVOL</div>
+        </div>
+        <div class="col-md-9 my-1">
+            <div><button id="gt" class="btn text-white  fa fa-list"></button></div>
+        </div>
+        <div class="col-md-1 my-1">
+            <div class="row">
+                <div class="col-md-6 pl-5">
+                    <span class="fa fa-user "></span>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa fa-bell "></span>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+<!-- end navbar -->
+<!-- start sidebar and content -->
+
+    <div class="row">
+        <div class="col-md-2 bg-dark vh-90" id="lk">
+            <nav class="nav flex-column  my-3">
+                <img src="logo.jpg" class="rounded-circle" width="75px" height="75px">
+                <div class="row mt-3">
+                    <a href="moi.html" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class="fa fa-clock ii"></span>
+                        </div>
+                        <div class="col-md-8 d-flex justify-content-start">
+                            <span class="aa">Acceuil</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="row mt-1">
+                    <a href="" class="text-white btn w-100 collapsed"  style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#bc" id="pe">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-user ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start">
+                                <span class="aa">Personnel</span>
+                            </div>
+                            <div class="col-md-1">
+                                <span class="fa fa-chevron-right aa" id="chpe"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row text-white collapse" id="bc" data-parent="#lk" style="background-color: rgba(66, 85, 93, 0.185);">
+                    <div class="col-md-1">
+                        <span class="fa fa-plus oo"></span>
+                        <span class="fa fa-user oo"></span>
+                        <span class="fa fa-envelope oo"></span>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="aa">Ajouter Personnel</span>
+                      <a href="create.html" class="text-decoration-none text-white aa"><span>Liste Personnel</span></a>  
+                        <span class="aa">Envoyer des Mails</span>
+                    </div>
+                </div>
+                <div class="row mt-1"  id="pr">
+                    <a href="" class="text-white btn w-100 collapsed "  style="background-color: rgba(66, 85, 93, 0.185);"  data-toggle="collapse" data-target="#ba" id="pr">
+                        <div class="row">
+                            <div class="col-md-1    ">
+                                <span class="fa fa-briefcase ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start" >
+                                <span class="aa">Prestataire</span>
+                            </div>
+                            <div class="col-md-1">
+                                <span class="fa fa-chevron-right aa" id="chpr"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row text-white collapse" id="ba" data-parent="#lk" style="background-color: rgba(66, 85, 93, 0.185);">
+                    <div class="col-md-1">
+                        <span class="fa fa-plus oo"></span>
+                        <span class="fa fa-plus oo"></span>
+                        <span class="fa fa-plus oo"></span>
+                        <span class="fa fa-envelope oo"></span>
+                        <span class="fa fa-user oo"></span>
+                        <span class="fa fa-plus oo"></span>
+                    </div>
+                    <div class="col-md-9" >
+                        <span class="aa">Ajouter Prestataire</span>
+                        <span class="aa">Liste Prestataire</span>
+                        <span class="aa">Envoyer des Mails</span>
+                        <span class="aa">Ajouter Contact</span>
+                        <span class="aa">Liste Contact</span>
+                        <span class="aa">Envoyer des SMS</span>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <a href="" class="text-white btn w-100 collapsed"  style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#be" id="tr">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-hourglass ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start">
+                                <span class="aa">Travaux</span>
+                            </div>
+                            <div class="col-md-1 justify-content-end">
+                                <span class="fa fa-chevron-right aa" id="chtr"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row text-white collapse" id="be" data-parent="#lk" style="background-color: rgba(66, 85, 93, 0.185);">
+                    <div class="col-md-1">
+                        <span class="fa fa-bell oo"></span>
+                        <span class="fa fa-comment oo"></span>
+                        <span class="fa fa-plus oo"></span>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="aa">Effectuer Travaux</span>
+                        <span class="aa">Liste Travaux</span>
+                        <span class="aa">Envoyer des Mails</span>
+                    </div>
+                </div>
+               
+                <div class="row mt-1">
+                    <a href="" class="text-white btn w-100"  style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-bold ii"></span>
+                            </div>
+                            <div class="col-md-8 text-nowrap d-flex justify-content-start">
+                                <span class="aa">Opération Bancaire</span>
+                            </div>
+                            <div class="col-md-1">
+                                <span class="fa fa-chevron-right aa"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-1">
+                    <a href="" class="text-white btn w-100"  style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-eye-dropper ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start">
+                                <span class="aa">Prestation</span>
+                            </div>
+                            <div class="col-md-1">
+                                <span class="fa fa-chevron-right aa"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-1">
+                    <a href="" class="text-white btn w-100"  style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-arrow-up ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start">
+                                <span class="aa">Comptabilité</span>
+                            </div>
+                            <div class="col-md-1">
+                                <span class="fa fa-chevron-right aa"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-1 mb-5">
+                    <a href="" class="text-white btn w-100"  style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <span class="fa fa-folder-open ii"></span>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-start">
+                                <span class="aa">Document</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+            <div class="col-md-10 bg-light" id="kl">
+               <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" card shadow border-0">
+                                    <p class="d-flex justify-content-center py-3" style="background-color: rgba(222, 228, 228, 0.356);">
+                                        <span class="fa fa-chess-knight fa-4x text-info"></span>
+                                    </p>
+                                    <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                        <p class="card-text ml-3">utilisateurs</p>
+                                        <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">36</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" card shadow border-0">
+                                    <p class="d-flex justify-content-center py-3" style="background-color: rgba(183, 255, 255, 0.356);">
+                                        <span class="fa fa-link fa-4x text-info"></span>
+                                    </p>
+                                    <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                        <p class="card-text ml-3">Prestations</p>
+                                        <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">11</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" card shadow border-0">
+                                    <p class="d-flex justify-content-center py-3" style="background-color: rgba(222, 228, 238, 0.356);">
+                                        <span class="fa fa-print fa-4x text-info"></span>
+                                    </p>
+                                    <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                        <p class="card-text ml-3">Visiteurs</p>
+                                        <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">141</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" card shadow border-0">
+                                    <p class="d-flex justify-content-center py-3" style="background-color: rgba(183, 255, 255, 0.356);">
+                                        <span class="fa fa-qrcode fa-4x text-info"></span>
+                                    </p>
+                                    <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                        <p class="card-text ml-3">Voyagres</p>
+                                        <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class=" card shadow border-0">
+                                <p class="d-flex justify-content-center py-3" style="background-color: rgba(222, 228, 238, 0.356);">
+                                    <span class="fa fa-lock fa-4x text-info"></span>
+                                </p>
+                                <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                    <p class="card-text ml-3">Formations</p>
+                                    <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">23</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" card shadow border-0">
+                                <p class="d-flex justify-content-center py-3" style="background-color: rgba(138, 255, 255, 0.356);">
+                                    <span class="fa fa-th-large fa-4x text-info"></span>
+                                </p>
+                                <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                    <p class="card-text ml-3">Etudiants</p>
+                                    <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">19</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class=" card shadow border-0">
+                                <p class="d-flex justify-content-center py-3" style="background-color: rgba(222, 228, 238, 0.356);">
+                                    <span class="fa fa-glass-martini fa-4x text-info"></span>
+                                </p>
+                                <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                    <p class="card-text ml-3">Stagiaires</p>
+                                    <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">31</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" card shadow border-0">
+                                <p class="d-flex justify-content-center py-3" style="background-color: rgba(138, 255, 255, 0.356);">
+                                    <span class="fa fa-asterisk fa-4x text-info"></span>
+                                </p>
+                                <div class="card-body p-0 m-0 justify-content-between align-items-center d-flex">
+                                    <p class="card-text ml-3">Clients</p>
+                                    <p class="card-text border rounded-pill text-white bg-secondary mb-3 mr-2 px-2">11</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>  
+           <div class="row">
+               <div class="col-md-1 offset-11 fixed-bottom">
+                   <button class="btn fa fa-comment text-white bg-success rounded-circle ml-5" id="ct" data-toggle="modal" data-target="#toast"></button>
+               </div>
+           </div>
+           <div class="modal fade" id="toast">
+               <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body bg-info text-dark">
+                            <textarea cols="100%" rows="4" placeholder="Envoyer un message" class="form-control"></textarea>
+                        </div>
+                        <div class="modal-footer bg-primary">
+                            <a href=""> <button class="btn btn-submit bg-transparent" type="submit" data-bs-dismiss="modal">Envoyer</button></a>
+                        </div>
+                   </div>
+               </div>
+           </div>
+            </div>
+            
+        </div>
+    <!-- end sidebar and content -->
+    </div>
+  
+    
+</body>
+
+<script src="vendors/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+
+<script src="index.js"></script>
+</html>

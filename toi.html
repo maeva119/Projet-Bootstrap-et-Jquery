@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet2 page4</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fonts/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/css/dataTables.bootstrap4.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- start navbar -->
+        <div class="row bg-info text-white">
+            <div class="col-md-2 my-1">
+                <div><span class="fa fa-clock mr-2"></span>ENVOL</div>
+            </div>
+            <div class="col-md-9 my-1">
+                <div><button id="gt" class="btn text-white  fa fa-list"></button></div>
+            </div>
+            <div class="col-md-1 my-1">
+                <div class="row">
+                    <div class="col-md-6 pl-5">
+                        <span class="fa fa-user "></span>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="fa fa-bell "></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end navbar -->
+        <!-- start sidebar and content -->
+
+        <div class="row">
+            <div class="col-md-2 bg-dark" id="lk">
+                <nav class="nav flex-column  my-3">
+                    <img src="logo.jpg" class="rounded-circle" width="75px" height="75px">
+                    <div class="row mt-3">
+                        <a href="moi.html" class="text-white btn w-100"
+                            style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-clock ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Acceuil</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100 collapsed"
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#bc"
+                            id="pe">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-user ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Personnel</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa" id="chpe"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="bc" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-user oo"></span>
+                            <span class="fa fa-envelope oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Ajouter Personnel</span>
+                            <a href="create.html" class="text-decoration-none text-white aa"><span>Liste
+                                    Personnel</span></a>
+                            <span class="aa">Envoyer des Mails</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1" id="pr">
+                        <a href="" class="text-white btn w-100 collapsed "
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#ba"
+                            id="pr">
+                            <div class="row">
+                                <div class="col-md-1    ">
+                                    <span class="fa fa-briefcase ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Prestataire</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa" id="chpr"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="ba" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                            <span class="fa fa-envelope oo"></span>
+                            <span class="fa fa-user oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Ajouter Prestataire</span>
+                            <span class="aa">Liste Prestataire</span>
+                            <span class="aa">Envoyer des Mails</span>
+                            <span class="aa">Ajouter Contact</span>
+                            <span class="aa">Liste Contact</span>
+                            <span class="aa">Envoyer des SMS</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100 collapsed"
+                            style="background-color: rgba(66, 85, 93, 0.185);" data-toggle="collapse" data-target="#be"
+                            id="tr">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-hourglass ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Travaux</span>
+                                </div>
+                                <div class="col-md-1 justify-content-end">
+                                    <span class="fa fa-chevron-right aa" id="chtr"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row text-white collapse" id="be" data-parent="#lk"
+                        style="background-color: rgba(66, 85, 93, 0.185);">
+                        <div class="col-md-1">
+                            <span class="fa fa-bell oo"></span>
+                            <span class="fa fa-comment oo"></span>
+                            <span class="fa fa-plus oo"></span>
+                        </div>
+                        <div class="col-md-9">
+                            <span class="aa">Effectuer Travaux</span>
+                            <span class="aa">Liste Travaux</span>
+                            <span class="aa">Envoyer des Mails</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-bold ii"></span>
+                                </div>
+                                <div class="col-md-8 text-nowrap d-flex justify-content-start">
+                                    <span class="aa">Opération Bancaire</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-eye-dropper ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Prestation</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-arrow-down ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Comptabilité</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="fa fa-chevron-right aa"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-1 mb-5">
+                        <a href="" class="text-white btn w-100" style="background-color: rgba(66, 85, 93, 0.185);">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <span class="fa fa-folder-open ii"></span>
+                                </div>
+                                <div class="col-md-8 d-flex justify-content-start">
+                                    <span class="aa">Document</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-10" style="background-color: rgb(244, 248, 248);" id="kl">
+                <div class="bg-white mt-3 px-4 mb-5" id="ee">
+                    <div class="row pt-3">
+                        <div class="col-md-11"></div>
+                        <div class="col-md-1">
+                            <span class="fa fa-chevron-down" id="cc"></span>
+                            <span class="fa fa-close ml-1" id="dd"></span>
+                        </div>
+                    </div>
+
+                    <h5 class="text-info text-center mb-4">LISTE DU PERSONNEL</h5>
+                    <div id="ff">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table id="datatable" class="table table-striped table-bordered " style="width:100%">
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th class="text-center">#</th>
+                                            <th>NOM</th>
+                                            <th>LOGIN</th>
+                                            <th>Contacts</th>
+                                            <th>Fonction</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td>AGUEKENG AROLLE DUBOIS</td>
+                                            <td>AROLLE@envoltech.com</td>
+                                            <td>697653748</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td>CHOUMESSI KADJE KEVINE ROLANDE</td>
+                                            <td>Kadjekeva@gmail.com</td>
+                                            <td>659241547</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td>DJAKOU TAMO ORNEGA</td>
+                                            <td>tamodjakou@gmail.com</td>
+                                            <td>691337989</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">4</td>
+                                            <td>DJOUSSE DOUANLA ARNAUD</td>
+                                            <td>djousse2035@gmail.com</td>
+                                            <td>655916136</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">5</td>
+                                            <td>FEUZEU FEUZEU FRANK ERIC</td>
+                                            <td>FEUZEU@envoltech.com</td>
+                                            <td>697927878</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">6</td>
+                                            <td>FOKA MIGLANG JOEL</td>
+                                            <td>miglandfaka@gmail.com</td>
+                                            <td>678787876</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">7</td>
+                                            <td>FOSSO TAKAM WILFRID</td>
+                                            <td>fossowilfrid@gmail.com</td>
+                                            <td>695822737</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">8</td>
+                                            <td>FOTIE SASSUM BERENGER</td>
+                                            <td>berengerfotie@gmail.com</td>
+                                            <td>656362139</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">9</td>
+                                            <td>KAM TEKAHFO DEFOUE KREMER</td>
+                                            <td>kremerdefoue@gmail.com</td>
+                                            <td>656639925</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">9</td>
+                                            <td>KAMDEM TCHEOPHILE</td>
+                                            <td>KA@envoltech.com</td>
+                                            <td>675877595</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Development Lead</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Chief Marketing Officer (CMO)</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sydney</td>
+                                            <td>23</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Regional Director</td>
+                                            <td>Singapore</td>
+                                            <td>28</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Regional Marketing</td>
+                                            <td>Tokyo</td>
+                                            <td>20</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Sydney</td>
+                                            <td>37</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>Stagiaire</td>
+                                            <td>
+                                                <p class="mx-4">
+                                                    <span class="fa fa-refresh text-success"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-trash text-danger"></span>
+                                                    <span class="mx-1">|</span>
+                                                    <span class="fa fa-edit text-primary"></span>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <!--   <tr>
+                                        <td>Howard Hatfield</td>
+                                        <td>Office Manager</td>
+                                        <td>San Francisco</td>
+                                        <td>51</td>
+                                        <td>2008-12-16</td>
+                                        <td>$164,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hope Fuentes</td>
+                                        <td>Secretary</td>
+                                        <td>San Francisco</td>
+                                        <td>41</td>
+                                        <td>2010-02-12</td>
+                                        <td>$109,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vivian Harrell</td>
+                                        <td>Financial Controller</td>
+                                        <td>San Francisco</td>
+                                        <td>62</td>
+                                        <td>2009-02-14</td>
+                                        <td>$452,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timothy Mooney</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>37</td>
+                                        <td>2008-12-11</td>
+                                        <td>$136,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jackson Bradshaw</td>
+                                        <td>Director</td>
+                                        <td>New York</td>
+                                        <td>65</td>
+                                        <td>2008-09-26</td>
+                                        <td>$645,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Olivia Liang</td>
+                                        <td>Support Engineer</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2011-02-03</td>
+                                        <td>$234,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>38</td>
+                                        <td>2011-05-03</td>
+                                        <td>$163,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sakura Yamamoto</td>
+                                        <td>Support Engineer</td>
+                                        <td>Tokyo</td>
+                                        <td>37</td>
+                                        <td>2009-08-19</td>
+                                        <td>$139,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thor Walton</td>
+                                        <td>Developer</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2013-08-11</td>
+                                        <td>$98,540</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finn Camacho</td>
+                                        <td>Support Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009-07-07</td>
+                                        <td>$87,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serge Baldwin</td>
+                                        <td>Data Coordinator</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2012-04-09</td>
+                                        <td>$138,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zenaida Frank</td>
+                                        <td>Software Engineer</td>
+                                        <td>New York</td>
+                                        <td>63</td>
+                                        <td>2010-01-04</td>
+                                        <td>$125,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zorita Serrano</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>56</td>
+                                        <td>2012-06-01</td>
+                                        <td>$115,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Acosta</td>
+                                        <td>Junior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>43</td>
+                                        <td>2013-02-01</td>
+                                        <td>$75,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cara Stevens</td>
+                                        <td>Sales Assistant</td>
+                                        <td>New York</td>
+                                        <td>46</td>
+                                        <td>2011-12-06</td>
+                                        <td>$145,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hermione Butler</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2011-03-21</td>
+                                        <td>$356,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lael Greer</td>
+                                        <td>Systems Administrator</td>
+                                        <td>London</td>
+                                        <td>21</td>
+                                        <td>2009-02-27</td>
+                                        <td>$103,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonas Alexander</td>
+                                        <td>Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>30</td>
+                                        <td>2010-07-14</td>
+                                        <td>$86,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shad Decker</td>
+                                        <td>Regional Director</td>
+                                        <td>Edinburgh</td>
+                                        <td>51</td>
+                                        <td>2008-11-13</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>Singapore</td>
+                                        <td>29</td>
+                                        <td>2011-06-27</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>New York</td>
+                                        <td>27</td>
+                                        <td>2011-01-25</td>
+                                        <td>$112,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr> -->
+                                        </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 offset-11 fixed-bottom">
+                            <button class="btn fa fa-comment ml-5 text-white bg-success rounded-circle " id="ct"
+                                data-toggle="modal" data-target="#toast"></button>
+                        </div>
+                    </div>
+
+                    <div class="modal " id="toast">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary"> </div>
+                                <div class="modal-body bg-info text-dark">
+                                    <textarea cols="100%" rows="4" placeholder="Envoyer un message"
+                                        class="form-control"></textarea>
+                                </div>
+                                <div class="modal-footer bg-primary">
+                                    <a href=""> <button class="btn btn-submit bg-transparent"
+                                            type="submit">Envoyer</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end sidebar and content -->
+    </div>
+
+</body>
+
+<script src="vendors/js/jquery.min.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="vendors/js/jquery.dataTables.min.js"></script>
+<script src="vendors/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $("#datatable").DataTable();
+</script>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tata</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fonts/css/all.css" />
+    <link rel="stylesheet" href="vendors/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="vendors/css/jquery-te-1.4.0.css">
+
+</head>
+
+<body>
+    <input type="text" class="input">
+    <p>oklkjkb</p>
+    <table id="table" class="table table-striped table-bordered">
+        <tr>
+            <th>numero</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>sexe</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>tamo</td>
+            <td>leo</td>
+            <td>masculin</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>toma</td>
+            <td>ivan</td>
+            <td>masculin</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>toto</td>
+            <td>yan</td>
+            <td>masculin</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>toukam</td>
+            <td>ange</td>
+            <td>feminin</td>
+        </tr>
+    </table>
+</body>
+<script src="vendors/js/jquery.min.js"></script>
+<script src="vendors/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+<script src="vendors/js/jquery-te-1.4.0.min.js"></script>
+<script src="vendors/js/jquery.dataTables.min.js"></script>
+<script src="vendors/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $(".input").jqte();
+    $("#table").DataTable();
+</script>
+
+</html>
